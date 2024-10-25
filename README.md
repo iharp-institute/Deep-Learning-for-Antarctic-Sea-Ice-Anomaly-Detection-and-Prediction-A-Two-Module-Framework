@@ -28,6 +28,89 @@ All results and analyses from the model, along with plot generation, are present
 
 
 
-## Usage
+# Usage
 
-To utilize the scripts, clone the repository and run the appropriate Python files corresponding to your chosen training and testing periods. Ensure you have the necessary libraries installed which is mentioned in.py file.
+To utilize the scripts, clone the repository and run the appropriate Python files corresponding to your chosen training and testing periods. Ensure you have the necessary libraries installed which is mentioned in dependencies.
+
+
+
+# Dependencies
+
+This project requires several Python libraries to handle image processing, tensor manipulation, scientific computing, and environmental data formats. The code was tested using **Python 3.10.12**, but it should be compatible with other Python 3.x versions as well.
+
+> **Note:** Some libraries listed here may not be essential for running the current code but can be beneficial for future data processing tasks.
+
+## Required Libraries
+
+1. **torch**  
+   - PyTorch is used for GPU-accelerated tensor operations and neural network functionalities.
+   - Installation:  
+     ```bash
+     pip install torch
+     ```
+   - *For CUDA support, use the appropriate version (e.g., CUDA 11.7):*  
+     ```bash
+     pip install torch --extra-index-url https://download.pytorch.org/whl/cu117
+     ```
+
+2. **opencv-python (cv2)**  
+   - OpenCV is utilized for reading and processing images.
+   - Installation:  
+     ```bash
+     pip install opencv-python
+     ```
+
+3. **glob**  
+   - Part of Python's standard library, no installation needed.
+   - Purpose: Lists files based on a pattern for batch processing.
+
+4. **numpy**  
+   - NumPy provides support for array and matrix operations.
+   - Installation:  
+     ```bash
+     pip install numpy
+     ```
+
+5. **matplotlib**  
+   - Matplotlib is used for plotting and displaying images.
+   - Installation:  
+     ```bash
+     pip install matplotlib
+     ```
+
+6. **netCDF4**  
+   - netCDF4 is essential for reading and writing NetCDF files, commonly used for environmental data.
+   - Installation:  
+     ```bash
+     pip install netCDF4
+     ```
+
+7. **xarray**  
+   - Xarray simplifies working with labeled multi-dimensional arrays, particularly for NetCDF data.
+   - Installation:  
+     ```bash
+     pip install xarray
+     ```
+
+8. **pandas**  
+   - Pandas provides data manipulation tools, especially useful for tabular data.
+   - Installation:  
+     ```bash
+     pip install pandas
+     ```
+
+9. **scipy**  
+   - SciPy adds additional scientific computing functionalities, including statistical operations.
+   - Installation:  
+     ```bash
+     pip install scipy
+     ```
+
+---
+
+## Installation Summary
+
+For convenience, you can install all required packages in one command:
+
+```bash
+pip install torch opencv-python numpy matplotlib netCDF4 xarray pandas scipy
