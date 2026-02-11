@@ -4,7 +4,7 @@ This repository contains several Python scripts for analyzing sea ice anomalies,
 
 # Download Sea Ice Extent Images
 
-Sea ice extent images (648 MB for 2000 - 2022) can be downloaded from the following link: [NOAA Sea Ice Extent Images](https://noaadata.apps.nsidc.org/NOAA/G02135/south/daily/images/).
+Sea ice extent images (648 MB for 2000 - 2022) can be downloaded from the following link: [NOAA Sea Ice Extent Images](https://noaadata.apps.nsidc.org/NOAA/G02135/south/daily/images/). Cropping the images to 332 × 316 from all sides.
 
 # Download Annual Minimum Antarctic Sea Ice Extent Data
 
