@@ -2,11 +2,23 @@
 
 This repository contains several Python scripts for analyzing sea ice anomalies, with specific training, testing, and validation periods.
 
-# Download Sea Ice Extent Images
+## Data Preparation for Sea Ice Extent Images
 
-Sea ice extent images (648 MB for 2000 - 2022) can be downloaded from the following link: [NOAA Sea Ice Extent Images](https://noaadata.apps.nsidc.org/NOAA/G02135/south/daily/images/). The images were cropped to a fixed Antarctic bounding box, removing colorbars and annotations, resulting in a final size of 332 × 316 pixels.
+Before running the main image processing notebooks, you must first download and preprocess the raw satellite images using the following scripts in order:
 
-# Download Annual Minimum Antarctic Sea Ice Extent Data
+1. **Download the images** using `download.py`:
+   ```bash
+   python download.py
+   ```
+   This script fetches the daily sea ice extent images from [NOAA](https://noaadata.apps.nsidc.org/NOAA/G02135/south/daily/images/).
+
+2. **Crop the images** using `cropping.py`:
+   ```bash
+   python cropping.py
+   ```
+   This script crops each image to a fixed Antarctic bounding box (resulting in 332 × 316 pixels), removing colorbars and annotations to prepare them for next processing.
+
+# Annual Minimum Antarctic Sea Ice Extent Data
 
 Annual Minimum Antarctic Sea Ice Extent data can be found at the following link: [Understanding Climate: Antarctic Sea Ice Extent](https://www.climate.gov/news-features/understanding-climate/understanding-climate-antarctic-sea-ice-extent).
 
